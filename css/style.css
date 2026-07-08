@@ -122,3 +122,34 @@
 
 .testimonial-card.short { grid-row-end: span 32; }
 .testimonial-card.long { grid-row-end: span 48; }
+
+/* Custom Additions */
+/* Button Effects: Scale on hover/active and add shadow */
+button, .btn-effect {
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+button:active, .btn-effect:active {
+    transform: scale(1.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* WhatsApp Bounce Animation - Bounces once every 8 seconds */
+@keyframes whatsapp-bounce {
+    0%, 80%, 100% {
+        transform: translateY(0);
+    }
+    85% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(10px);
+    }
+    95% {
+        transform: translateY(-5px);
+    }
+}
+
+.whatsapp-bounce {
+    animation: whatsapp-bounce 8s infinite ease-in-out;
+}
+
