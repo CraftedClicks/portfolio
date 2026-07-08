@@ -106,14 +106,47 @@ function toggleFaq(button) {
 
 // Interactions & Animations Initialization
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Hamburger Toggle (if exists)
+  // Mobile Nav Hamburger Toggle (Drawer overlay mode)
   const menuBtn = document.getElementById('mobile-menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+  const menuCloseBtn = document.getElementById('mobile-menu-close-btn');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  const menuDrawer = document.getElementById('mobile-menu-drawer');
+  const menuBackdrop = document.getElementById('mobile-menu-backdrop');
+
+  function openMobileMenu() {
+    if (menuOverlay && menuDrawer) {
+      menuOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        menuDrawer.classList.remove('translate-x-full');
+        menuDrawer.classList.add('translate-x-0');
+      }, 10);
+    }
   }
+
+  function closeMobileMenu() {
+    if (menuOverlay && menuDrawer) {
+      menuDrawer.classList.remove('translate-x-0');
+      menuDrawer.classList.add('translate-x-full');
+      setTimeout(() => {
+        menuOverlay.classList.add('hidden');
+      }, 300);
+    }
+  }
+
+  if (menuBtn) {
+    menuBtn.addEventListener('click', openMobileMenu);
+  }
+  if (menuCloseBtn) {
+    menuCloseBtn.addEventListener('click', closeMobileMenu);
+  }
+  if (menuBackdrop) {
+    menuBackdrop.addEventListener('click', closeMobileMenu);
+  }
+  // Close menu on link clicks
+  document.querySelectorAll('#mobile-menu-drawer a').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
 
   // FAQ Search Interactivity
   const searchInput = document.querySelector('input[placeholder="Search for answers..."]');

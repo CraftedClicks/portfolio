@@ -22,7 +22,7 @@
 <!-- TopNavBar -->
 <!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
 <a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
@@ -43,19 +43,45 @@
 </button>
 </div>
 </div>
-<!-- Mobile Menu -->
-<div class="hidden md:hidden fixed top-[72px] left-0 w-full bg-surface border-b border-outline-variant/30 flex flex-col p-6 gap-4 z-40 shadow-lg" id="mobile-menu">
-<a class="mobile-nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
-<a class="mobile-nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
-<a class="mobile-nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
-<a class="mobile-nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
-<a class="mobile-nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
-<a class="mobile-nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
-<a class="mobile-nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
-<a class="mobile-nav-link-contact text-primary font-bold font-label-caps text-label-caps" href="contact.html">Contact</a>
-<a class="bg-primary-container text-on-primary text-center px-8 py-3 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] transition-all" href="contact.html">
-            Get Started
-        </a>
+<!-- Mobile Navigation Drawer Overlay -->
+<div class="fixed inset-0 z-50 hidden" id="mobile-menu-overlay" role="dialog" aria-modal="true">
+  <!-- Backdrop -->
+  <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity" id="mobile-menu-backdrop"></div>
+  
+  <!-- Drawer Content -->
+  <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-surface p-8 shadow-2xl flex flex-col justify-between z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu-drawer">
+    <div class="space-y-8">
+      <!-- Header -->
+      <div class="flex items-center justify-between">
+        <span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
+        <button class="text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-close-btn" aria-label="Close Menu">
+          <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+      </div>
+      
+      <!-- Links -->
+      <div class="flex flex-col gap-6">
+        <a class="mobile-nav-link-home text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="index.html">Home</a>
+        <a class="mobile-nav-link-services text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="services.html">Services</a>
+        <a class="mobile-nav-link-portfolio text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link-pricing text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="pricing.html">Pricing</a>
+        <a class="mobile-nav-link-process text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="process.html">Process</a>
+        <a class="mobile-nav-link-about text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="about.html">About</a>
+        <a class="mobile-nav-link-faq text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="faq.html">FAQ</a>
+        <a class="mobile-nav-link-contact text-primary font-bold font-label-caps text-lg transition-colors" href="contact.html">Contact</a>
+      </div>
+    </div>
+    
+    <!-- Footer in Drawer -->
+    <div class="space-y-6">
+      <a class="bg-primary-container text-white text-center px-8 py-4 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] active:scale-95 transition-all shadow-md" href="contact.html">
+        Get Started
+      </a>
+      <div class="text-xs text-on-surface-variant text-center">
+        © 2026 CraftedClicks
+      </div>
+    </div>
+  </div>
 </div>
 </nav>
 <main class="pt-32">
@@ -230,7 +256,7 @@
 <!-- Footer -->
 <!-- Footer -->
 <footer class="bg-surface-container-highest rounded-t-lg mt-auto">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
 <div class="space-y-6">
 <a class="font-display-lg text-headline-md font-bold text-primary block" href="index.html">CraftedClicks</a>
 <p class="text-on-surface-variant font-body-md">
