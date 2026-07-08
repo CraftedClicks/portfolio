@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ | CraftedClicks - Digital Craftsmanship</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="js/script.js"></script>
+<style>
+        
+        .faq-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+            opacity: 0;
+        }
+        .faq-accordion-item.active .faq-accordion-content {
+            max-height: 500px;
+            opacity: 1;
+            padding-top: 16px;
+        }
+        .faq-accordion-item.active .faq-chevron {
+            transform: rotate(180deg);
+        }
+        .topo-bg {
+            background-image: radial-gradient(circle at 2px 2px, #e5e5e5 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="flex items-center gap-2">
+<span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="about.html">About</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-full font-bold scale-95 active:opacity-80 transition-all hover:shadow-lg">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-20 overflow-hidden topo-bg">
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="flex flex-col items-center text-center space-y-6">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em]">KNOWLEDGE BASE</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-on-surface max-w-3xl">Common Questions</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Everything you need to know about our process, pricing, and how we bring your digital vision to life with precision and craft.
+                </p>
+<!-- FAQ Search Bar -->
+<div class="w-full max-w-xl mt-8 relative group">
+<span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">search</span>
+<input class="w-full pl-16 pr-6 py-5 rounded-full border border-outline focus:border-primary focus:ring-1 focus:ring-primary bg-surface-container-lowest text-on-surface outline-none transition-all shadow-sm" placeholder="Search for answers..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Abstract Decoration -->
+<div class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 -translate-x-1/4 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+</header>
+<!-- FAQ Accordion List -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Category Sidebar -->
+<div class="lg:col-span-3 space-y-4">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6">CATEGORIES</h3>
+<button class="w-full text-left px-6 py-4 rounded-xl bg-primary-container text-on-primary font-bold transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+                        Pricing & Billing
+                    </button>
+<button class="w-full text-left px-6 py-4 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-medium transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+                        Process & Revisions
+                    </button>
+<button class="w-full text-left px-6 py-4 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-medium transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">settings_suggest</span>
+                        Tech & Maintenance
+                    </button>
+<button class="w-full text-left px-6 py-4 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-medium transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+                        Project Timelines
+                    </button>
+</div>
+<!-- Accordion Content -->
+<div class="lg:col-span-9 space-y-4">
+<!-- FAQ Item 1 -->
+<div class="faq-accordion-item bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 transition-all hover:shadow-sm">
+<button class="flex justify-between items-center w-full text-left group" onclick="toggleFaq(this)">
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">How does the pricing structure work for custom projects?</h4>
+<span class="material-symbols-outlined faq-chevron text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-accordion-content">
+<p class="text-on-surface-variant leading-relaxed">
+                                Our pricing is value-based and tailored to the complexity of your specific requirements. We typically work with a project-based fee for initial builds and offer flexible retainer models for ongoing support. Every proposal includes a detailed breakdown of costs, from design exploration to final deployment, ensuring complete transparency with no hidden fees.
+                            </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-accordion-item bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 transition-all hover:shadow-sm">
+<button class="flex justify-between items-center w-full text-left group" onclick="toggleFaq(this)">
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">What is the standard timeline for a high-end web build?</h4>
+<span class="material-symbols-outlined faq-chevron text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-accordion-content">
+<p class="text-on-surface-variant leading-relaxed">
+                                A typical high-end project spans between 8 to 14 weeks. This timeline allows for our rigorous craftsmanship process: 2 weeks for discovery and strategy, 4 weeks for deep UI/UX design, and 4-6 weeks for technical development and performance optimization. We prioritize quality over speed to ensure your digital product stands out as a piece of art.
+                            </p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-accordion-item bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 transition-all hover:shadow-sm">
+<button class="flex justify-between items-center w-full text-left group" onclick="toggleFaq(this)">
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">How many revision rounds are included in the process?</h4>
+<span class="material-symbols-outlined faq-chevron text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-accordion-content">
+<p class="text-on-surface-variant leading-relaxed">
+                                We include three major revision rounds within our standard contract. However, our process is highly collaborative. We present work in "sprints" to get your feedback early and often, which usually minimizes the need for drastic changes during the final stages. Our goal is absolute perfection and client satisfaction.
+                            </p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-accordion-item bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 transition-all hover:shadow-sm">
+<button class="flex justify-between items-center w-full text-left group" onclick="toggleFaq(this)">
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Which technologies do you specialize in for development?</h4>
+<span class="material-symbols-outlined faq-chevron text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-accordion-content">
+<p class="text-on-surface-variant leading-relaxed">
+                                We utilize a modern, high-performance tech stack including React, Next.js, and Tailwind CSS for the frontend, often backed by headless CMS solutions like Sanity or Strapi. For complex integrations, we leverage Node.js or Python. We select the technology based on your project's specific performance and scalability needs.
+                            </p>
+</div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="faq-accordion-item bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 transition-all hover:shadow-sm">
+<button class="flex justify-between items-center w-full text-left group" onclick="toggleFaq(this)">
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Do you offer post-launch maintenance and updates?</h4>
+<span class="material-symbols-outlined faq-chevron text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-accordion-content">
+<p class="text-on-surface-variant leading-relaxed">
+                                Yes, we offer comprehensive "Concierge Support" packages. This includes hosting management, security updates, performance monitoring, and ongoing design/content updates. We believe a digital product is a living entity that needs consistent care to maintain its premium status and technical edge.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA Section -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-primary text-on-primary rounded-xl p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="relative z-10 max-w-xl">
+<h2 class="font-display-lg text-headline-lg mb-6">Still have questions?</h2>
+<p class="text-on-primary/80 text-body-lg">
+                        Our team of experts is ready to discuss your project and provide the clarity you need. Let's start a conversation about your next digital masterpiece.
+                    </p>
+</div>
+<div class="relative z-10">
+<button class="bg-surface-container-lowest text-primary px-12 py-5 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl">
+                        Contact Us Today
+                    </button>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/10 rounded-full blur-2xl"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full rounded-t-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="space-y-6">
+<span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
+<p class="text-on-surface-variant font-body-md">
+                    Excellence in digital craftsmanship. We build premium interfaces for visionary brands.
+                </p>
+<p class="text-on-surface-variant text-sm">© 2024 CraftedClicks. All rights reserved.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-on-surface">SERVICES</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">UI/UX Design</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Brand Identity</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Performance Optimization</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-on-surface">COMPANY</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="portfolio.html">Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="process.html">Process</a></li>
+<li><a class="text-primary font-bold" href="faq.html">FAQ</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-on-surface">LEGAL</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+        function toggleFaq(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.faq-accordion-item').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // If it wasn't active, open it
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // Search Interactivity (Mock)
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const items = document.querySelectorAll('.faq-accordion-item');
+            
+            items.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                if (text.includes(term)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body></html>

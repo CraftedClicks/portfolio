@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | CraftedClicks - Premium Digital Craftsmanship</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="js/script.js"></script>
+<style>
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 32px;
+        }
+        .project-card {
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+        }
+        .topo-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 86c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm76-52c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm-33-8c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z' fill='%23a04100' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased topo-bg">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 border-b border-outline-variant/30 shadow-sm transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed" href="index.html">CraftedClicks</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-medium" href="portfolio.html">Portfolio</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="about.html">About</a>
+</nav>
+<button class="bg-primary-container text-on-primary font-bold py-3 px-8 rounded-full hover:scale-105 active:opacity-80 transition-all duration-300 shadow-lg">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-padding text-center relative overflow-hidden">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-4">PORTFOLIO</span>
+<h1 class="font-display-lg text-display-lg mb-8 max-w-3xl mx-auto">Our Work Speaks for Itself.</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto opacity-80">
+                We bridge the gap between technical excellence and luxury aesthetics. Explore our collection of premium digital experiences crafted for industry leaders.
+            </p>
+<!-- Abstract background shape -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-24 -left-24 w-72 h-72 bg-tertiary-fixed/20 rounded-full blur-3xl -z-10"></div>
+</section>
+<!-- Filter Controls -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-16">
+<div class="flex flex-wrap justify-center gap-4">
+<button class="px-8 py-3 rounded-full bg-primary-container text-on-primary font-semibold shadow-md transition-all active:scale-95">All</button>
+<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">Landing Page</button>
+<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">App Design</button>
+<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">SaaS Product</button>
+<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">Dashboard</button>
+</div>
+</section>
+<!-- Project Grid -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+<!-- Main Featured Project (SaaS Product) -->
+<div class="lg:col-span-8 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A ultra-high-fidelity mockup of a sleek, dark-themed SaaS dashboard interface featuring vibrant data visualizations, neon orange accents, and clean minimalist typography. The scene is presented in a premium 3D isometric view with soft studio lighting and deep shadows, emphasizing a professional and futuristic atmosphere. Pristine white background creates a high-end gallery aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK0l4fo0jwHWyomkMyTlT6h555K7stHQ47HEsjJvs4AoXi5Jb5mjEg3m4JglV1qTc4BYxjEbY_fLIdXk-sYgP5g9JJ1ZTAm__Ou42k6F6BJYECf2yNDtJPg6NFVkRprq6os1fpntSPL3KjJLsxmT70Inimj7ggKkLvNwHaknoWc1B2A6qFTCAYUTh-RK8L7GoKB_7lTiUaCK940PP7FlCMZmPCloIYPYWzR7gxvH1K5ug2BQc8Ugm7lw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-bold flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                View Case Study <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider">SaaS Product</span>
+<span class="text-secondary opacity-50 text-[12px] font-bold uppercase tracking-wider">2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Nexus Wealth Management</h3>
+<p class="text-secondary text-body-lg max-w-xl">A comprehensive financial tracking system designed for high-net-worth individuals, focusing on clarity and rapid decision-making.</p>
+</div>
+</div>
+<!-- Secondary Project (Landing Page) -->
+<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col">
+<div class="relative overflow-hidden flex-grow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxurious landing page design for a high-end real estate agency. The website showcases large, high-resolution architectural photography of a modern glass villa, elegant serif headings, and expansive whitespace. The color scheme is a sophisticated blend of cream, charcoal, and warm metallic orange. The mood is exclusive, serene, and authoritative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYX9kzBvoz95heYuVcSWY9ST9uWsSBG0gEu1gP7JLTPyL5MO-nYHMSQu1Bb1B9FYqo8-eiasawosA4_8iWGc_adIB_DqJzzIyiJS70CMi1aOXDj5SmP1sQbrrApoayFf0dK3rMndsH43EqrP63FFIiN6J9ZlUKsQQJUc6yp-iV_gtKZJ8mJldd5-fRf66MqZS7GdIk4v7hXCQqKNDQVCok536JGYu3ZX9chKUrb0ymlQOroRWJYqMenw"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">Landing Page</span>
+<h3 class="font-headline-md text-headline-md mb-2">Aether Estates</h3>
+<p class="text-secondary text-body-md mb-6 opacity-80">Luxury real estate portal with immersive property tours.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="#">
+                            View Case Study 
+                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">north_east</span>
+</a>
+</div>
+</div>
+<!-- Education Platform -->
+<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col">
+<div class="relative overflow-hidden aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A modern education platform interface displayed on a tablet mockup. The design features a colorful, engaging learning path with custom 3D icons, progress charts, and a clean, student-friendly sidebar. Soft pastel colors and high-contrast orange call-to-action buttons create a friendly yet professional educational environment. Studio lighting with soft diffuse shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjoBjTNnIvVs3j5DT9haI4jfc7CmsntDYM78eejVjhtEUEe2nsbVio2J00GGGIZj8BJo8RvWP64gU2Aa8Y4EHNxCymTP6efFh28qS8wRCiQpjWFYeLj__7j5anyjPKSpCilyAmlmTexcJa6kKSzOmE4gas-pgxi11V0jJxUNBIdJcppcKIgrOV4dHOXPEejrz6ubGg6zMHuWy1O4ewC_X4trcniQnKSJCSu_NNIbSxvirmxPJ5IcESjA"/>
+</div>
+<div class="p-8">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">App Design</span>
+<h3 class="font-headline-md text-headline-md mb-2">Lumina Academy</h3>
+<p class="text-secondary text-body-md mb-6 opacity-80">Interactive learning ecosystem for remote creative education.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="#">
+                            View Case Study 
+                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">north_east</span>
+</a>
+</div>
+</div>
+<!-- Ecommerce Project -->
+<div class="lg:col-span-8 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden">
+<div class="grid md:grid-cols-2 h-full">
+<div class="p-10 flex flex-col justify-center order-2 md:order-1">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-6 self-start">E-commerce</span>
+<h3 class="font-headline-lg text-headline-lg mb-4">Vora Boutique</h3>
+<p class="text-secondary text-body-lg mb-8">High-conversion checkout experience for a premium fashion house, resulting in a 40% increase in mobile sales.</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold self-start hover:bg-on-primary-fixed-variant transition-colors shadow-md">
+                                Full Case Study
+                            </button>
+</div>
+<div class="relative overflow-hidden order-1 md:order-2">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" data-alt="A high-end e-commerce website for a luxury fashion brand. The design features minimalist product grids, elegant typography, and high-fashion photography. A clean orange shopping bag icon stands out against a pristine white and light grey background. The atmosphere is chic, expensive, and modern corporate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLR4cBnNYrLqTPkAoLUOMMXh6lxIEDPcIDMPq1mTMhxXoSGkj_B2UQV_Gp50c1h-5pmwmQt-ZMtHRALiAotH3wKGl7XByEHWjDs6MFJshvrkMgWG0R2wxbu085ovrMtgrCngBj_taI8WrEWP9HH8pc1De0h9DdUzhkXPfaREyKxsk8IhDtCHdX3e1BjHQSbrDu0vdMJvWlTC9mD_njHtpbh6CumFEGVFBb5oDpNc86NbP3R8rN5VWXJg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Counter Section -->
+<section class="bg-primary-container py-24 mb-section-padding overflow-hidden relative">
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white">
+<div class="text-center">
+<div class="text-display-lg font-display-lg mb-2">150+</div>
+<div class="font-label-caps text-label-caps tracking-widest opacity-80">PROJECTS COMPLETED</div>
+</div>
+<div class="text-center">
+<div class="text-display-lg font-display-lg mb-2">42</div>
+<div class="font-label-caps text-label-caps tracking-widest opacity-80">AWARD WINS</div>
+</div>
+<div class="text-center">
+<div class="text-display-lg font-display-lg mb-2">99%</div>
+<div class="font-label-caps text-label-caps tracking-widest opacity-80">CLIENT SUCCESS</div>
+</div>
+<div class="text-center">
+<div class="text-display-lg font-display-lg mb-2">8yr</div>
+<div class="font-label-caps text-label-caps tracking-widest opacity-80">CRAFTING EXPERIENCE</div>
+</div>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -bottom-1/2 -right-1/4 w-[600px] h-[600px] border-[40px] border-white/5 rounded-full"></div>
+</section>
+<!-- Process Snippet -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-padding">
+<div class="bg-white rounded-lg p-16 border border-outline-variant/10 shadow-sm">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-primary mb-4 block">OUR APPROACH</span>
+<h2 class="font-headline-lg text-headline-lg">How We Design Excellence</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-12 text-center">
+<div>
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-4">Discovery</h4>
+<p class="text-secondary opacity-70">We dive deep into your business goals to find the unique angle that sets you apart.</p>
+</div>
+<div>
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">draw</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-4">Craftsmanship</h4>
+<p class="text-secondary opacity-70">Meticulous design phases where every pixel is placed with intentionality and precision.</p>
+</div>
+<div>
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">rocket_launch</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-4">Launch &amp; Beyond</h4>
+<p class="text-secondary opacity-70">Seamless deployment followed by data-driven optimization for maximum impact.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-padding">
+<div class="bg-inverse-surface rounded-xl p-16 md:p-24 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-white mb-8">Ready to Build Your Digital Legacy?</h2>
+<p class="text-surface-variant text-body-lg mb-12 max-w-2xl mx-auto">Let's discuss how CraftedClicks can transform your vision into a high-performance digital masterpiece.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary-container text-on-primary px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl">Start Your Project</button>
+<button class="bg-transparent border border-outline-variant text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-white/10 transition-all">Schedule a Call</button>
+</div>
+</div>
+<!-- Artistic overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-primary to-transparent"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface rounded-t-lg">
+<div class="max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed block mb-6" href="index.html">CraftedClicks</a>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-md opacity-80 max-w-xs">
+                        Excellence in digital craftsmanship. We design and build products that scale and inspire.
+                    </p>
+</div>
+<div>
+<h5 class="text-primary dark:text-primary-fixed-dim font-bold mb-6">Services</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Product Design</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Branding Strategy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary dark:text-primary-fixed-dim font-bold mb-6">Explore</h5>
+<ul class="space-y-4">
+<li><a class="text-primary dark:text-primary-fixed-dim font-bold underline underline-offset-4" href="portfolio.html">Portfolio</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="process.html">Process</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Testimonials</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary dark:text-primary-fixed-dim font-bold mb-6">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+<li class="pt-4 flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">language</span></a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant dark:text-surface-variant text-sm">
+                    © 2024 CraftedClicks. Excellence in digital craftsmanship.
+                </p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-sm text-on-surface-variant">Available for new projects</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and Scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('py-4', 'shadow-sm');
+            } else {
+                nav.classList.add('py-4', 'shadow-sm');
+                nav.classList.remove('py-2', 'shadow-md');
+            }
+        });
+
+        // Simple filtering simulation logic (visual only for this demo)
+        const filterButtons = document.querySelectorAll('section button');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-primary-container', 'text-on-primary');
+                    b.classList.add('bg-white', 'border', 'border-outline-variant/30', 'text-secondary');
+                });
+                btn.classList.add('bg-primary-container', 'text-on-primary');
+                btn.classList.remove('bg-white', 'border', 'border-outline-variant/30', 'text-secondary');
+            });
+        });
+    </script>
+</body></html>
