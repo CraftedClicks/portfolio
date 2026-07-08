@@ -153,3 +153,24 @@ button:active, .btn-effect:active {
     animation: whatsapp-bounce 8s infinite ease-in-out;
 }
 
+/* Custom logo height */
+.logo {
+    height: 38px;
+}
+
+/* Hero section styling to override any empty states and ensure visibility */
+.hero {
+    background: #F7F9FC;
+    padding: 50px 20px;
+}
+.hero h1 {
+    color: #0A192F;
+    font-size: 28px;
+    opacity: 1;
+}
+
+/* Sticky bottom bar with 2 columns layout */
+.bottom-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
