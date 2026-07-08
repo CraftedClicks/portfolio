@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta name="description" content="Discover what clients say about CraftedClicks. Read reviews and stories about our fast, responsive, and growth-focused web design and development services.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Testimonials | CraftedClicks - Modern Websites Built to Grow Your Business</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
+<div class="hidden md:flex items-center gap-4 lg:gap-6">
+<a class="nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="nav-link-testimonials text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="testimonials.html">Testimonials</a>
+<a class="nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
+                Get Started
+            </a>
+<button aria-label="Open Navigation Menu" class="md:hidden text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer Overlay -->
+<div class="fixed inset-0 z-50 hidden" id="mobile-menu-overlay" role="dialog" aria-modal="true">
+  <!-- Backdrop -->
+  <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity" id="mobile-menu-backdrop"></div>
+  
+  <!-- Drawer Content -->
+  <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-surface p-8 shadow-2xl flex flex-col justify-between z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu-drawer">
+    <div class="space-y-8">
+      <!-- Header -->
+      <div class="flex items-center justify-between">
+        <span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
+        <button class="text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-close-btn" aria-label="Close Menu">
+          <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+      </div>
+      
+      <!-- Links -->
+      <div class="flex flex-col gap-6">
+        <a class="mobile-nav-link-home text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="index.html">Home</a>
+        <a class="mobile-nav-link-services text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="services.html">Services</a>
+        <a class="mobile-nav-link-portfolio text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link-testimonials text-primary font-bold font-label-caps text-lg transition-colors" href="testimonials.html">Testimonials</a>
+        <a class="mobile-nav-link-pricing text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="pricing.html">Pricing</a>
+        <a class="mobile-nav-link-process text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="process.html">Process</a>
+        <a class="mobile-nav-link-about text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="about.html">About</a>
+        <a class="mobile-nav-link-faq text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="faq.html">FAQ</a>
+        <a class="mobile-nav-link-contact text-on-surface-variant hover:text-primary font-medium font-label-caps text-lg transition-colors" href="contact.html">Contact</a>
+      </div>
+    </div>
+    
+    <!-- Footer in Drawer -->
+    <div class="space-y-6">
+      <a class="bg-primary-container text-white text-center px-8 py-4 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] active:scale-95 transition-all shadow-md" href="contact.html">
+        Get Started
+      </a>
+      <div class="text-xs text-on-surface-variant text-center">
+        © 2026 CraftedClicks
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+<main class="pt-24 bg-texture min-h-screen">
+<!-- Hero Section -->
+<header class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding text-center">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-4">TESTIMONIALS</span>
+<h1 class="font-display-lg text-[40px] md:text-display-lg mb-6 text-on-surface">Voices of Satisfaction.</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto mb-12">
+                Discover how our digital craftsmanship has transformed businesses and elevated brands through precision and innovation.
+            </p>
+<!-- Impact Metrics -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-2xl mx-auto mt-16">
+<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
+<h3 class="font-display-lg text-[40px] md:text-headline-lg text-primary mb-2">50+</h3>
+<p class="font-label-caps text-label-caps text-secondary uppercase">Projects Delivered</p>
+</div>
+<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
+<h3 class="font-display-lg text-[40px] md:text-headline-lg text-primary mb-2">99%</h3>
+<p class="font-label-caps text-label-caps text-secondary uppercase">Client Retention</p>
+</div>
+</div>
+</header>
+<!-- Customer Stories Masonry Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+<!-- Testimonial 1 -->
+<div class="testimonial-card short p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:shadow-xl transition-all duration-500 group flex flex-col">
+<div class="flex items-center gap-1 text-[#FFB800] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 flex-grow">
+                        "The level of precision CraftedClicks brought to our platform redesign was unparalleled. They didn't just build a website; they engineered an experience that doubled our conversion rate in three months."
+                    </p>
+<div class="flex items-center gap-4 mt-auto">
+<img class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Close-up professional portrait of a tech executive woman in a minimalist bright office setting. She has a confident smile and is wearing professional dark attire. High-end lighting with soft bokeh background. Colors are crisp whites and deep blacks with high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm_KcSFjkicptHow7jCRR_V39ScRopdRjUCFswzvzvmZammFkzXqjBxIPvEnnxEMwiSg0iLgmIEkpa7Y64zOSkD1vUjwsHYmY5pPQqikG3EkDP58eHVYyc4JKkXXJzCA9c41h5-YGDy3JQ-HieFQIu6pPbzXvUBnvJsaZgIizPTN6f18KkBFATJupuwO9C1R3HsYETajXlbCHTanxnmNtDpmH3Uf8gKKg6OtVcUypwIv1EWeDtW0wrkg"/>
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Elena Sterling</h4>
+<p class="font-label-caps text-[10px] text-secondary">CEO, LUMINA FINTECH</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card long p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:shadow-xl transition-all duration-500 group flex flex-col lg:mt-12">
+<div class="flex items-center gap-1 text-[#FFB800] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 flex-grow">
+                        "CraftedClicks understands the intersection of luxury and utility. Our high-end clientele expects perfection, and that is exactly what they delivered. From the initial bento-grid layout concepts to the final smooth animations, the attention to detail was astounding. They are truly masters of digital craftsmanship."
+                    </p>
+<div class="flex items-center gap-4 mt-auto">
+<img class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Sophisticated headshot of a mature male designer in a clean architect studio. He is wearing a charcoal turtleneck and has silver-streaked hair. The background shows blueprints and minimalist furniture. Professional architectural photography style with a premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPOvfVBYjF_E5eSAn-plr7bD06hB6Yiv4twzZpCSuVUmprwAtFEGndK8onTen__LJqzOsCM72Z04R660fC52rm_NKxlRADVnT50HmI4BxmcmPaHQOFIZuPhmZVefIFWUieSAUD-gKBiOGbERg3sj7PijwPvOLK0uTLM0KgZWQ4ACYItbsVkFhY2rWcnr33FgB1EkYEoO68-dKPdLo9B_FGPY-sAVFftC-2QW-ERepeK80p0hky7FDo1g"/>
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Julian Vance</h4>
+<p class="font-label-caps text-[10px] text-secondary">DESIGN DIRECTOR, VANCE & CO</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:shadow-xl transition-all duration-500 group flex flex-col">
+<div class="flex items-center gap-1 text-[#FFB800] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 flex-grow">
+                        "The technical excellence provided by the CraftedClicks team helped us scale our SaaS product from 10k to 100k users without a single hiccup. Their code is clean, their UI is gorgeous, and their strategy is flawless."
+                    </p>
+<div class="flex items-center gap-4 mt-auto">
+<img class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Cinematic portrait of a young male software engineer in a high-tech modern workstation. Soft blue and orange light-mode glow reflecting on his glasses. Minimalist setup in the background with clean lines and premium tech equipment. High contrast, sharp detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKC11-oVXlqEVwUrdB8gO417CHRKYOV-67ZrbUFgwxSoeORvbS87pup-vW7yKXG3sl-ipJ6ODh5ie6EtRhqPgoRbDchZxuoanCHDCFndOZz_cXzlGjkSxGqepQLfvTLKIdRp3OdUPMasj9NfSzaluPzZp15IPoOAN8vja82ipBhObrz1AwVMqUHPel_ETgzFf1PzhNkTmJER_vNIrQvqm_PLYzfwlQFqTw1sx3kRMwpL7llwAk9x6M1A"/>
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Marcus Thorne</h4>
+<p class="font-label-caps text-[10px] text-secondary">CTO, VELOCITY CLOUD</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 4 -->
+<div class="testimonial-card long p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:shadow-xl transition-all duration-500 group flex flex-col">
+<div class="flex items-center gap-1 text-[#FFB800] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 flex-grow">
+                        "We've worked with many agencies, but none have shown the same level of commitment to brand identity as CraftedClicks. They managed to capture the soul of our artisanal brand and translate it into a digital gallery that feels both high-end and deeply personal. It's rare to find an agency that values art as much as code."
+                    </p>
+<div class="flex items-center gap-4 mt-auto">
+<img class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Artistic portrait of a woman founder in a bright art studio with natural lighting. She has vibrant style and is surrounded by abstract paintings. The mood is creative, upscale, and minimalist. Soft focus background, premium photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCRxT5pxXWo4uljYto-9LBUg3xgjDsi49UM7-V4gVs_QYVfOHEritW_VTDwy9bxHDiqYsXynxxRkiUpzn5RpsaYxQcP7NMp0YUCOGtlK-twPC_syLR2QMOian_JiiHY45YGi4SqlMNVtlcasFc4xy1aM_4-3qpxGJRcgrCXqRSYDHWU2TpS8RvfaO_xMiX9IvJ32AvliVQh9p105OpSqX48DOyI3qbqAod0v10WAJNYnKwGQKlecHxJw"/>
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Sienna Rossi</h4>
+<p class="font-label-caps text-[10px] text-secondary">FOUNDER, ROSSI ARTISANS</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 5 -->
+<div class="testimonial-card short p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:shadow-xl transition-all duration-500 group flex flex-col lg:-mt-12">
+<div class="flex items-center gap-1 text-[#FFB800] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 flex-grow">
+                        "Speed, precision, and elegance. That's the CraftedClicks promise and they deliver every single time. Our new e-commerce hub is a masterpiece of modern web design."
+                    </p>
+<div class="flex items-center gap-4 mt-auto">
+<img class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Portrait of a modern entrepreneur in a luxury high-rise office overlooking a city skyline. Afternoon sun casting a warm glow. Crisp white shirt, minimalist decor, high-end lifestyle photography aesthetic with a focus on success and professional clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0KJMFNlpuzUU4cEMUnAu0QyHeW1eFeC6ZzlzaMPIUet_Xe-bQz-xLallN76WOXajDib1k3AWFYPp26cl1PPbvULfq4XnrsfAvBs_2Cdu0eDcITfsQEQ4P6rIhdWrXi2OM0TFZR4oGZqGfXQb89YfU_0CfvIQpfay50z-Nawj0x_qDTr1nc6--GWTyu8ufxCKrFUTbzRj0_Tmuw_69BZKQBikoJf9lxK_2wYhXgg8BCbxXTPabRQwiPg"/>
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">David Chen</h4>
+<p class="font-label-caps text-[10px] text-secondary">CEO, METRO COMMERCE</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 6 -->
+<div class="testimonial-card p-10 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:shadow-xl transition-all duration-500 group flex flex-col">
+<div class="flex items-center gap-1 text-[#FFB800] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic text-on-surface-variant mb-8 flex-grow">
+                        "The asymmetric bento layouts they designed for our portfolio page were exactly what we needed to stand out in a crowded market. Truly visionary work."
+                    </p>
+<div class="flex items-center gap-4 mt-auto">
+<img class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="A portrait of a creative professional woman in a bright, modern studio. Soft diffuse lighting. She is wearing a minimalist beige outfit. Background has hints of design magazines and premium gadgets. High-key aesthetic, extremely clean and airy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ4_7VLsiMifbDzaOMJKkwi4vNdTXlk-KpDYy0shFmcP3O0E-uZSGdZWuMINoJbGX9uK0cMOsY2CLtiZbCsAGIe-FXTCK_w_yHYrZRwtpsF1sjjfiwgq4zGPArWWN_DpIt1KMW2uBrtSW3GTTqliDoc_-TmapN5NXKIscDqRNgc8Z_-4Im_OBtCtM2AeGoJ6CclvV7ZGfhKnDO4MTKBP7BRkQhratSKBKKAu-sEFcgqO3WZxKwf6ka0A"/>
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Aria Lindholm</h4>
+<p class="font-label-caps text-[10px] text-secondary">OWNER, NORDIC DESIGN LAB</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
+<div class="bg-inverse-surface rounded-lg p-16 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+<h2 class="font-display-lg text-headline-lg text-inverse-on-surface mb-6 relative z-10">Join the Circle of Excellence.</h2>
+<p class="font-body-lg text-body-lg text-surface-variant/80 max-w-xl mx-auto mb-10 relative z-10">
+                    Ready to elevate your digital presence to the next level? Let's build something extraordinary together.
+                </p>
+<button class="bg-primary-container text-on-primary px-12 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform relative z-10">
+                    Start Your Project
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest rounded-t-lg mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-mobile md:px-margin-desktop py-section-padding">
+<div class="space-y-6">
+<a class="font-display-lg text-headline-md font-bold text-primary block" href="index.html">CraftedClicks</a>
+<p class="text-on-surface-variant font-body-md">
+                Modern Websites. Built to Grow Your Business.
+            </p>
+<p class="text-on-surface-variant text-sm">
+                © 2026 CraftedClicks. All rights reserved.
+            </p>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-primary">Services</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">UI/UX Design</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">SaaS Architecture</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Website Redesign</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-primary">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="about.html">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="portfolio.html">Our Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="testimonials.html">Testimonials</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="process.html">Working Process</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-primary">Connect</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="contact.html">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Dribbble</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Twitter / X</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body></html>
