@@ -174,3 +174,13 @@ button:active, .btn-effect:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* Mobile navigation drawer solid background and overlay layering overrides */
+#mobile-menu-overlay {
+    z-index: 9999 !important;
+}
+#mobile-menu-drawer {
+    background-color: #ffffff !important;
+    z-index: 10000 !important;
+}
+
