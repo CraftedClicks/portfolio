@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
+<meta charset="utf-8"/><meta content="Meet the architects of your digital future. Learn about CraftedClicks' identity, core values, and our expert web design and development team." name="description"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>About Us | CraftedClicks</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <script src="js/script.js"></script>
 <style>
         
@@ -20,23 +20,46 @@
             background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10c10 0 10 20 20 20s10-20 20-20 10 20 20 20 10-20 20-20' stroke='%23FF6B00' stroke-opacity='0.05' fill='none'/%3E%3C/svg%3E");
         }
     </style>
-    <link rel="stylesheet" href="css/style.css">
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 border-b border-outline-variant/30 dark:border-outline-variant/10 shadow-sm dark:shadow-none">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
-<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">CraftedClicks</div>
+<a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="services.html">Services</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-medium" href="about.html">About</a>
+<a class="nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="nav-link-about text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="about.html">About</a>
+<a class="nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
 </div>
-<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-full font-label-caps text-label-caps scale-95 active:opacity-80 transition-all">
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
                 Get Started
-            </button>
+            </a>
+<button aria-label="Open Navigation Menu" class="md:hidden text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden fixed top-[72px] left-0 w-full bg-surface border-b border-outline-variant/30 flex flex-col p-6 gap-4 z-40 shadow-lg" id="mobile-menu">
+<a class="mobile-nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="mobile-nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="mobile-nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="mobile-nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="mobile-nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="mobile-nav-link-about text-primary font-bold font-label-caps text-label-caps" href="about.html">About</a>
+<a class="mobile-nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="mobile-nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+<a class="bg-primary-container text-on-primary text-center px-8 py-3 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] transition-all" href="contact.html">
+            Get Started
+        </a>
 </div>
 </nav>
 <main class="pt-24 topo-bg">
@@ -52,17 +75,17 @@
                         We don't just build websites; we engineer digital legacies. At CraftedClicks, we bridge the gap between technical complexity and premium aesthetics.
                     </p>
 <div class="flex gap-4">
-<button class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-label-caps text-label-caps hover:translate-y-[-2px] transition-transform">
+<a class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-label-caps text-label-caps hover:translate-y-[-2px] transition-transform inline-block text-center" href="portfolio.html" role="button">
                             View Our Work
-                        </button>
-<button class="border border-outline px-8 py-4 rounded-full font-label-caps text-label-caps text-on-surface hover:bg-surface-container-low transition-colors">
+                        </a>
+<a class="border border-outline px-8 py-4 rounded-full font-label-caps text-label-caps text-on-surface hover:bg-surface-container-low transition-colors inline-block text-center" href="process.html" role="button">
                             Our Process
-                        </button>
+                        </a>
 </div>
 </div>
 <div class="relative flex justify-center">
 <div class="relative z-10 w-full max-w-[500px] aspect-square rounded-full overflow-hidden border-8 border-surface-container-lowest shadow-xl">
-<img class="w-full h-full object-cover" data-alt="A diverse group of professional creative technologists including developers and designers working in a bright, minimalist studio environment. High-key lighting, soft shadows, and a clean modern aesthetic with subtle orange accents reflecting the brand identity. The team looks confident and collaborative, embodying a premium agency feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkSo_t6Ttf-s4a5QjBD4hNYqnnHHk1p1Iio_fILXlgviK-4Od_a7Q9n53w-eq0rOKhQdh5cK8HcBpcPSTc3ZohhbKrbsnzksLTCFRPwhtafpBb4V-wAqAEvyFblq5yWjps8EAaWiHcTp0fsOC-D1zp0YyK2iQ7AZg6t1Dqs7DWxM837oCAGXYM0_sBkzYVVcM4c0k3ly3liUmJCGL77Dmjhf0zaIAHYRNoly8osqt-WLoxRiXKCWCY-A"/>
+<img alt="A diverse group of professional creative technologists including developers and designers working in a bright, minimalist studio environment. High-key lighting, soft shadows, and a clean modern aesthetic with subtle orange accents reflecting the brand identity. The team looks confident and collaborative, embodying a premium agency feel." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkSo_t6Ttf-s4a5QjBD4hNYqnnHHk1p1Iio_fILXlgviK-4Od_a7Q9n53w-eq0rOKhQdh5cK8HcBpcPSTc3ZohhbKrbsnzksLTCFRPwhtafpBb4V-wAqAEvyFblq5yWjps8EAaWiHcTp0fsOC-D1zp0YyK2iQ7AZg6t1Dqs7DWxM837oCAGXYM0_sBkzYVVcM4c0k3ly3liUmJCGL77Dmjhf0zaIAHYRNoly8osqt-WLoxRiXKCWCY-A"/>
 </div>
 <!-- Decorative Elements -->
 <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-fixed rounded-full blur-3xl opacity-30 -z-0"></div>
@@ -98,7 +121,7 @@
 <p class="font-body-md text-body-md text-secondary">Recognized for excellence in design and user experience by leading industry bodies.</p>
 </div>
 <div class="col-span-12 md:col-span-8 overflow-hidden rounded-lg relative group h-[320px]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A close-up shot of a high-end mechanical watch being assembled on a clean, white workbench with professional tools. The lighting is crisp and detailed, focusing on the intricate gears and precision movement. This visual metaphor represents the attention to detail and craftsmanship CraftedClicks applies to digital products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXOa4H6K7hPn47NdhR9Uc6cydtsfp2ujsxjgth3xGnlosQFDxC1v5e2ZBNIEOBchoO2n0ChWbEWelhxCYqUiaziZOr2-LkPYFobXi1olOqqCWr1Xev-5hiLZwMCAp-Xk5R0aPEGcOUfbbDoJDp4wFiP97i78HhYRcmIC07Hx6gi49dvWTk96aD2Mim2WdCHfYNMfBkQhdLdWPI6_QmIQ45cy73iC2sykm2OSNvjpP04uFWIkxKGcG2RA"/>
+<img alt="A close-up shot of a high-end mechanical watch being assembled on a clean, white workbench with professional tools. The lighting is crisp and detailed, focusing on the intricate gears and precision movement. This visual metaphor represents the attention to detail and craftsmanship CraftedClicks applies to digital products." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXOa4H6K7hPn47NdhR9Uc6cydtsfp2ujsxjgth3xGnlosQFDxC1v5e2ZBNIEOBchoO2n0ChWbEWelhxCYqUiaziZOr2-LkPYFobXi1olOqqCWr1Xev-5hiLZwMCAp-Xk5R0aPEGcOUfbbDoJDp4wFiP97i78HhYRcmIC07Hx6gi49dvWTk96aD2Mim2WdCHfYNMfBkQhdLdWPI6_QmIQ45cy73iC2sykm2OSNvjpP04uFWIkxKGcG2RA"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-10">
 <p class="text-white font-display-lg text-headline-md">Precision in Motion</p>
 </div>
@@ -149,7 +172,7 @@
 <!-- Team Member 1 -->
 <div class="group">
 <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A portrait of a male Lead Developer in his early 30s, wearing a dark turtleneck. He has a focused, intelligent expression. The background is a blurred, high-end office with soft architectural lighting. The style is professional and sophisticated, emphasizing technical expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmKGdMXwgVZjs2sjJeeoUXblMmPICM_zPP0DmVkSsjqBczjanhwKW56XmB1Y08iFZTtnvfDZ_VJNpk8WJLrsOOBv_R6a3FoIu8XVfI5awKmud6pzJzfc6h5F5Am4lgpJ6XV16qpllvW5GvpMsQqhU-gQUOjcplh_teOM0vkMJ1tfAuf5e1tl1pCpZGGsCVVta1dfEgb-DuqbDXDgd4yhIm3HyX5Hju3FOmvfsxVV_gbydEEVRTAidZA"/>
+<img alt="A portrait of a male Lead Developer in his early 30s, wearing a dark turtleneck. He has a focused, intelligent expression. The background is a blurred, high-end office with soft architectural lighting. The style is professional and sophisticated, emphasizing technical expertise." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmKGdMXwgVZjs2sjJeeoUXblMmPICM_zPP0DmVkSsjqBczjanhwKW56XmB1Y08iFZTtnvfDZ_VJNpk8WJLrsOOBv_R6a3FoIu8XVfI5awKmud6pzJzfc6h5F5Am4lgpJ6XV16qpllvW5GvpMsQqhU-gQUOjcplh_teOM0vkMJ1tfAuf5e1tl1pCpZGGsCVVta1dfEgb-DuqbDXDgd4yhIm3HyX5Hju3FOmvfsxVV_gbydEEVRTAidZA"/>
 <div class="absolute bottom-4 left-4 flex gap-2">
 <div class="bg-surface-container-lowest/80 backdrop-blur-sm p-2 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
 <span class="material-symbols-outlined text-[20px]">link</span>
@@ -163,7 +186,7 @@
 <!-- Team Member 2 -->
 <div class="group">
 <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A portrait of a female UI Designer with a creative and visionary look. She is wearing stylish glasses and a white minimalist blazer. Bright, airy lighting with soft shadows. The overall aesthetic is one of artistic precision and modern elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQR00SCqNCx5S6sQkjvquUOC9HF0uth7PVsbD7EGZ2bfj9Ljyuol1eiszrFfdhqyVRaO4c9Ra9COiIYw7PIfPJWd9tZpJEdunKAJK27bjN8rH8DernUuyuUSvp_PfCTlaQFRgRhpp1oPlgHDafMmxsgHL7q95WVMdsthsIpbBVUVj-UFJI5DqQAdxKS2mILbEA20XSwNd1_la4Fudic5BNmvPcEH2pU27hR4FVxlg7XPsZd19wbURBg"/>
+<img alt="A portrait of a female UI Designer with a creative and visionary look. She is wearing stylish glasses and a white minimalist blazer. Bright, airy lighting with soft shadows. The overall aesthetic is one of artistic precision and modern elegance." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQR00SCqNCx5S6sQkjvquUOC9HF0uth7PVsbD7EGZ2bfj9Ljyuol1eiszrFfdhqyVRaO4c9Ra9COiIYw7PIfPJWd9tZpJEdunKAJK27bjN8rH8DernUuyuUSvp_PfCTlaQFRgRhpp1oPlgHDafMmxsgHL7q95WVMdsthsIpbBVUVj-UFJI5DqQAdxKS2mILbEA20XSwNd1_la4Fudic5BNmvPcEH2pU27hR4FVxlg7XPsZd19wbURBg"/>
 <div class="absolute bottom-4 left-4 flex gap-2">
 <div class="bg-surface-container-lowest/80 backdrop-blur-sm p-2 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
 <span class="material-symbols-outlined text-[20px]">brush</span>
@@ -177,7 +200,7 @@
 <!-- Team Member 3 -->
 <div class="group">
 <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A portrait of a male Project Manager, mid-40s, exuding authority and calm. He is dressed in a sharp charcoal suit. Lighting is professional with a hint of warmth. The setting feels corporate yet accessible, conveying organizational mastery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEDnGLSM0rWoqZ65Aog2MxPndWwCH1P8ebk7wo7f3GBwIBQPIg1ciJ2KgDnoiR5d5STPitsAOQHjViSx-O05SmNLU3O7GM3u_uQE6R7eKEssSg8rCkrQekehI6dXyqSm4-tyD2t3fs6bHKXm03MoKYQOtZUX81QXNXpRhXEn9gTT-W-y-EsKZqKu4sXWL6sUrQoKLJh9_U5em9lYKuOOXKF24FAmhLnXIGlAUVJZc8sbuxxesB2OWIbQ"/>
+<img alt="A portrait of a male Project Manager, mid-40s, exuding authority and calm. He is dressed in a sharp charcoal suit. Lighting is professional with a hint of warmth. The setting feels corporate yet accessible, conveying organizational mastery." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEDnGLSM0rWoqZ65Aog2MxPndWwCH1P8ebk7wo7f3GBwIBQPIg1ciJ2KgDnoiR5d5STPitsAOQHjViSx-O05SmNLU3O7GM3u_uQE6R7eKEssSg8rCkrQekehI6dXyqSm4-tyD2t3fs6bHKXm03MoKYQOtZUX81QXNXpRhXEn9gTT-W-y-EsKZqKu4sXWL6sUrQoKLJh9_U5em9lYKuOOXKF24FAmhLnXIGlAUVJZc8sbuxxesB2OWIbQ"/>
 <div class="absolute bottom-4 left-4 flex gap-2">
 <div class="bg-surface-container-lowest/80 backdrop-blur-sm p-2 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
 <span class="material-symbols-outlined text-[20px]">assignment</span>
@@ -214,55 +237,46 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full rounded-t-lg">
+<!-- Footer -->
+<footer class="bg-surface-container-highest rounded-t-lg mt-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-padding">
-<div class="col-span-1 md:col-span-1">
-<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed mb-6">CraftedClicks</div>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-4">© 2024 CraftedClicks. Excellence in digital craftsmanship.</p>
+<div class="space-y-6">
+<a class="font-display-lg text-headline-md font-bold text-primary block" href="index.html">CraftedClicks</a>
+<p class="text-on-surface-variant font-body-md">
+                Modern Websites. Built to Grow Your Business.
+            </p>
+<p class="text-on-surface-variant text-sm">
+                © 2026 CraftedClicks. All rights reserved.
+            </p>
 </div>
-<div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-6">Quick Links</h4>
-<ul class="flex flex-col gap-4">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Services</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="portfolio.html">Portfolio</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="process.html">Process</a></li>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-primary">Services</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">UI/UX Design</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">SaaS Architecture</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Website Redesign</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-6">Connect</h4>
-<ul class="flex flex-col gap-4">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">LinkedIn</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Twitter</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Instagram</a></li>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-primary">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="about.html">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="portfolio.html">Our Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="process.html">Working Process</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="faq.html">FAQ</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-6">Legal</h4>
-<ul class="flex flex-col gap-4">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-primary">Connect</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="contact.html">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Dribbble</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Twitter / X</a></li>
 </ul>
 </div>
 </div>
 </footer>
-<script>
-        // Micro-interaction for hover states on team members
-        document.querySelectorAll('.group').forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                // Potential for custom JS animation if needed
-            });
-        });
-        
-        // Navigation scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 20) {
-                nav.classList.add('py-2');
-                nav.classList.remove('py-4');
-            } else {
-                nav.classList.add('py-4');
-                nav.classList.remove('py-2');
-            }
-        });
-    </script>
+
 </body></html>

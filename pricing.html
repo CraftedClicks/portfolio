@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
+<meta charset="utf-8"/><meta content="Simple and transparent pricing plans for modern business websites and e-commerce stores with CraftedClicks subscription model." name="description"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pricing | CraftedClicks - Excellence in Digital Craftsmanship</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <style>
         
         /* Custom atmospheric background pattern based on image reference */
@@ -17,27 +17,48 @@
         }
     </style>
 <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 border-b border-outline-variant/30 dark:border-outline-variant/10 shadow-sm dark:shadow-none transition-all duration-300">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
-<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">
-                CraftedClicks
-            </div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="services.html">Services</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-medium transition-colors duration-300" href="pricing.html">Pricing</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="about.html">About</a>
-</nav>
-<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-90 active:scale-95 transition-all shadow-md">
-                Get Started
-            </button>
+<a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="nav-link-pricing text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="pricing.html">Pricing</a>
+<a class="nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
 </div>
-</header>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
+                Get Started
+            </a>
+<button aria-label="Open Navigation Menu" class="md:hidden text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden fixed top-[72px] left-0 w-full bg-surface border-b border-outline-variant/30 flex flex-col p-6 gap-4 z-40 shadow-lg" id="mobile-menu">
+<a class="mobile-nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="mobile-nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="mobile-nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="mobile-nav-link-pricing text-primary font-bold font-label-caps text-label-caps" href="pricing.html">Pricing</a>
+<a class="mobile-nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="mobile-nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="mobile-nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="mobile-nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+<a class="bg-primary-container text-on-primary text-center px-8 py-3 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] transition-all" href="contact.html">
+            Get Started
+        </a>
+</div>
+</nav>
 <main class="pt-24 topo-bg">
 <!-- Hero Section -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding text-center relative overflow-hidden">
@@ -197,12 +218,12 @@
 <h2 class="font-headline-lg text-headline-lg mb-6">Ready to elevate your digital presence?</h2>
 <p class="text-white/80 text-lg mb-8">Join hundreds of premium brands who trust CraftedClicks for technical excellence and luxury design.</p>
 <div class="flex flex-wrap gap-4">
-<button class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-surface-container-low transition-colors shadow-lg">Get Started Now</button>
-<button class="bg-transparent border border-white/40 text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">Book a Call</button>
+<a class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-surface-container-low transition-colors shadow-lg inline-block text-center" href="contact.html" role="button">Get Started Now</a>
+<a class="bg-transparent border border-white/40 text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors inline-block text-center" href="contact.html" role="button">Book a Call</a>
 </div>
 </div>
 <div class="w-full md:w-1/3 aspect-square bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center relative z-10 group overflow-hidden">
-<img class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" data-alt="A premium high-end modern office interior with minimalist furniture and high ceilings. Large windows showing a cityscape at dusk. The mood is professional, sophisticated, and exclusive, reflecting a luxury web agency's workspace. Soft ambient lighting with orange highlights to match the brand color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ1irxKutSy8o3Ib1IiEa0j-eNquW7lWUNrxL-eF1YIKBuHSIW_k7l-jDi33aPGFH6o6naekC9mmrwP6MjCNxll7DPNS7IRAfvBZarcxmNcpHjkqkxuXb3o6uj0pnDickvsdk6s8mf2hzRuJvg9cQUWuwmL334TqAoEAguRec4gjRSzjPDLela7TBZBbzIqpSdT8dCTf3kfQB7gQXG-MqM97hMouAkiFFjk-XGDR9SvLmxUrx3UgLUWA"/>
+<img alt="A premium high-end modern office interior with minimalist furniture and high ceilings. Large windows showing a cityscape at dusk. The mood is professional, sophisticated, and exclusive, reflecting a luxury web agency's workspace. Soft ambient lighting with orange highlights to match the brand color." class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ1irxKutSy8o3Ib1IiEa0j-eNquW7lWUNrxL-eF1YIKBuHSIW_k7l-jDi33aPGFH6o6naekC9mmrwP6MjCNxll7DPNS7IRAfvBZarcxmNcpHjkqkxuXb3o6uj0pnDickvsdk6s8mf2hzRuJvg9cQUWuwmL334TqAoEAguRec4gjRSzjPDLela7TBZBbzIqpSdT8dCTf3kfQB7gQXG-MqM97hMouAkiFFjk-XGDR9SvLmxUrx3UgLUWA"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
 <div class="absolute bottom-6 left-6 flex items-center gap-3">
 <div class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white">
@@ -215,102 +236,46 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full rounded-t-lg bg-surface-container-highest dark:bg-inverse-surface mt-20">
+<!-- Footer -->
+<footer class="bg-surface-container-highest rounded-t-lg mt-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-padding">
-<div class="col-span-1 md:col-span-1">
-<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed mb-6">
-                    CraftedClicks
-                </div>
-<p class="text-on-surface-variant dark:text-surface-variant font-medium leading-relaxed">
-                    Excellence in digital craftsmanship. We build premium web experiences for the world's most ambitious brands.
-                </p>
-<div class="flex gap-4 mt-8">
-<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-xl">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-xl">language</span>
-</a>
-</div>
+<div class="space-y-6">
+<a class="font-display-lg text-headline-md font-bold text-primary block" href="index.html">CraftedClicks</a>
+<p class="text-on-surface-variant font-body-md">
+                Modern Websites. Built to Grow Your Business.
+            </p>
+<p class="text-on-surface-variant text-sm">
+                © 2026 CraftedClicks. All rights reserved.
+            </p>
 </div>
 <div class="space-y-4">
-<h4 class="font-bold text-primary uppercase text-xs tracking-[0.2em] mb-4">Core Services</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Web Design</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Digital Strategy</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">E-commerce Solutions</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Brand Development</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Services</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">UI/UX Design</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">SaaS Architecture</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Website Redesign</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h4 class="font-bold text-primary uppercase text-xs tracking-[0.2em] mb-4">Company</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="portfolio.html">Portfolio</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="process.html">Our Process</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="pricing.html">Pricing</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="contact.html">Contact Us</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="about.html">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="portfolio.html">Our Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="process.html">Working Process</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="faq.html">FAQ</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h4 class="font-bold text-primary uppercase text-xs tracking-[0.2em] mb-4">Legal</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Terms of Service</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline-offset-4 transition-all" href="#">Cookie Policy</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Connect</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="contact.html">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Dribbble</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Twitter / X</a></li>
 </ul>
-<div class="mt-8">
-<p class="text-on-surface-variant dark:text-surface-variant text-sm mt-4">
-                        © 2024 CraftedClicks. Excellence in digital craftsmanship.
-                    </p>
-</div>
 </div>
 </div>
 </footer>
-<script>
-        // Billing Toggle Logic
-        const toggleBtn = document.getElementById('toggle-btn');
-        const toggleDot = document.getElementById('toggle-dot');
-        const priceWeb = document.getElementById('price-web');
-        const priceEcom = document.getElementById('price-ecom');
-        const cycleWeb = document.getElementById('cycle-web');
-        const cycleEcom = document.getElementById('cycle-ecom');
 
-        let isYearly = false;
-
-        toggleBtn.addEventListener('click', () => {
-            isYearly = !isYearly;
-            
-            if (isYearly) {
-                toggleDot.style.transform = 'translateX(1.5rem)';
-                toggleBtn.classList.add('bg-primary-container/40');
-                
-                // Update Prices
-                priceWeb.textContent = priceWeb.dataset.yearly;
-                priceEcom.textContent = priceEcom.dataset.yearly;
-                cycleWeb.textContent = '/year';
-                cycleEcom.textContent = '/year';
-            } else {
-                toggleDot.style.transform = 'translateX(0)';
-                toggleBtn.classList.remove('bg-primary-container/40');
-                
-                // Update Prices
-                priceWeb.textContent = priceWeb.dataset.monthly;
-                priceEcom.textContent = priceEcom.dataset.monthly;
-                cycleWeb.textContent = '/month';
-                cycleEcom.textContent = '/month';
-            }
-        });
-
-        // Simple scroll behavior for navbar
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('py-2', 'shadow-lg');
-                header.classList.remove('py-4', 'shadow-sm');
-            } else {
-                header.classList.add('py-4', 'shadow-sm');
-                header.classList.remove('py-2', 'shadow-lg');
-            }
-        });
-    </script>
 </body></html>

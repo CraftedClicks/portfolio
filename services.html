@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
+<meta charset="utf-8"/><meta content="Explore CraftedClicks' premium services including custom web development, e-commerce stores, UI/UX design, and professional website redesigns." name="description"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Services | CraftedClicks - Excellence in Digital Craftsmanship</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
 <script src="js/script.js"></script>
 <style>
         body { font-family: 'Inter', sans-serif; }
@@ -16,23 +16,48 @@
         .top-nav-blur { background-color: rgba(250, 249, 254, 0.8); backdrop-filter: blur(12px); }
         .line-pattern { background-image: radial-gradient(#e2bfb0 0.5px, transparent 0.5px); background-size: 24px 24px; }
     </style>
-    <link rel="stylesheet" href="css/style.css">
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 border-b border-outline-variant/30 dark:border-outline-variant/10 shadow-sm dark:shadow-none">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
-<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed" href="index.html">CraftedClicks</a>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-medium" href="services.html">Services</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
-<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-300" href="about.html">About</a>
-</nav>
-<button class="bg-primary-container text-on-primary px-8 py-3 rounded-full font-bold scale-95 active:opacity-80 transition-all hover:opacity-90">Get Started</button>
+<a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link-services text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="services.html">Services</a>
+<a class="nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
 </div>
-</header>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
+                Get Started
+            </a>
+<button aria-label="Open Navigation Menu" class="md:hidden text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden fixed top-[72px] left-0 w-full bg-surface border-b border-outline-variant/30 flex flex-col p-6 gap-4 z-40 shadow-lg" id="mobile-menu">
+<a class="mobile-nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="mobile-nav-link-services text-primary font-bold font-label-caps text-label-caps" href="services.html">Services</a>
+<a class="mobile-nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="mobile-nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="mobile-nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="mobile-nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="mobile-nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
+<a class="mobile-nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+<a class="bg-primary-container text-on-primary text-center px-8 py-3 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] transition-all" href="contact.html">
+            Get Started
+        </a>
+</div>
+</nav>
 <main class="pt-24 overflow-hidden">
 <!-- Hero Section -->
 <section class="relative py-section-padding bg-surface overflow-hidden">
@@ -50,8 +75,8 @@
                         We bridge the gap between technical excellence and luxury aesthetics. Our team designs, builds, and scales digital experiences that capture premium audiences.
                     </p>
 <div class="flex flex-wrap gap-4">
-<button class="bg-primary-container text-on-primary px-10 py-4 rounded-full font-bold hover:shadow-lg transition-all active:scale-95">Explore Capabilities</button>
-<button class="bg-surface-container-highest text-on-surface border border-outline-variant/30 px-10 py-4 rounded-full font-bold hover:bg-surface-container-high transition-all">Download Portfolio</button>
+<a class="bg-primary-container text-on-primary px-10 py-4 rounded-full font-bold hover:shadow-lg transition-all active:scale-95 inline-block text-center" href="contact.html" role="button">Explore Capabilities</a>
+<a class="bg-surface-container-highest text-on-surface border border-outline-variant/30 px-10 py-4 rounded-full font-bold hover:bg-surface-container-high transition-all inline-block text-center" href="portfolio.html" role="button">Download Portfolio</a>
 </div>
 </div>
 <div class="md:w-2/5 relative">
@@ -60,7 +85,7 @@
 </div>
 <div class="absolute inset-0 flex items-center justify-center">
 <div class="w-[340px] h-[340px] rounded-full overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover" data-alt="A professional, smiling Indian male creative director in a high-end minimalist design studio environment. He is wearing a sophisticated blue denim shirt and a luxury watch, pointing towards digital interface elements floating in space. The lighting is warm and cinematic, featuring a soft orange glow and clean white architectural lines in the background. The overall aesthetic is one of prestige and expert digital craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr0xU4u3JF8jioSiCbRrkeQ8FCdxjzmM79laN0D6Cea6hY-_khzCB4w9P3qvBcW-faB6IEqr86C8Mu0n8V_iqnrpcv2cuKfdvf3F8t3XgkfG4GIimY4BSL4EVRyTCZ8dhymfbg7_hN4F6k-PuN4wpMAThjDpP95ZApLh9eQgeazoN2uRGgHDzHktF7v7kqo4tkVqRC4-tg1xcfrhbpvAATjbXDTlVROSeloJVY_hk49bMuhmzEcAnFFQ"/>
+<img alt="A professional, smiling Indian male creative director in a high-end minimalist design studio environment. He is wearing a sophisticated blue denim shirt and a luxury watch, pointing towards digital interface elements floating in space. The lighting is warm and cinematic, featuring a soft orange glow and clean white architectural lines in the background. The overall aesthetic is one of prestige and expert digital craftsmanship." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr0xU4u3JF8jioSiCbRrkeQ8FCdxjzmM79laN0D6Cea6hY-_khzCB4w9P3qvBcW-faB6IEqr86C8Mu0n8V_iqnrpcv2cuKfdvf3F8t3XgkfG4GIimY4BSL4EVRyTCZ8dhymfbg7_hN4F6k-PuN4wpMAThjDpP95ZApLh9eQgeazoN2uRGgHDzHktF7v7kqo4tkVqRC4-tg1xcfrhbpvAATjbXDTlVROSeloJVY_hk49bMuhmzEcAnFFQ"/>
 </div>
 </div>
 </div>
@@ -190,7 +215,7 @@
 </div>
 <div class="md:w-1/2">
 <div class="relative rounded-lg overflow-hidden premium-card-shadow aspect-[4/3] border border-outline-variant/20">
-<img class="w-full h-full object-cover" data-alt="A clean, minimalist high-tech server room or network operations center with glowing amber and white light accents. Soft focus on sleek monitoring dashboards showing real-time digital performance metrics. The atmosphere is quiet, sophisticated, and signals high-level technical maintenance and elite support services. Minimalist color palette of grey, white, and a vibrant signature orange." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCyR4_lLP2fH-x8UH4RK6CkpcIlb4WEOi18DGDWFq6a32DZXorlSh-Qk6E3d73cyL6unKffQzwOVnam-sLYckcWK_fDbLsPtVr-N1dlhXmtWstiBC2wCshI6H1xvqVId3SykIuDEt7KMvD366xKP-rAQnqCXgAW2ho2t2xuqoQD6j-YgiLw6OvG2m80nXMTuHNprFRksZcSbLo2zk9Lt4R9Din6LLnh14PxQ4ZU1Pi0fqWCWjGEdLZlA"/>
+<img alt="A clean, minimalist high-tech server room or network operations center with glowing amber and white light accents. Soft focus on sleek monitoring dashboards showing real-time digital performance metrics. The atmosphere is quiet, sophisticated, and signals high-level technical maintenance and elite support services. Minimalist color palette of grey, white, and a vibrant signature orange." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCyR4_lLP2fH-x8UH4RK6CkpcIlb4WEOi18DGDWFq6a32DZXorlSh-Qk6E3d73cyL6unKffQzwOVnam-sLYckcWK_fDbLsPtVr-N1dlhXmtWstiBC2wCshI6H1xvqVId3SykIuDEt7KMvD366xKP-rAQnqCXgAW2ho2t2xuqoQD6j-YgiLw6OvG2m80nXMTuHNprFRksZcSbLo2zk9Lt4R9Din6LLnh14PxQ4ZU1Pi0fqWCWjGEdLZlA"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
 <div class="absolute bottom-8 left-8 right-8">
 <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg border border-white/20">
@@ -224,65 +249,46 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full rounded-t-lg bg-surface-container-highest dark:bg-inverse-surface mt-24">
+<!-- Footer -->
+<footer class="bg-surface-container-highest rounded-t-lg mt-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-padding">
 <div class="space-y-6">
-<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed" href="index.html">CraftedClicks</a>
-<p class="text-on-surface-variant dark:text-surface-variant font-body-md">
-                    © 2024 CraftedClicks. Excellence in digital craftsmanship. We build high-performance web experiences for brands that demand the best.
-                </p>
+<a class="font-display-lg text-headline-md font-bold text-primary block" href="index.html">CraftedClicks</a>
+<p class="text-on-surface-variant font-body-md">
+                Modern Websites. Built to Grow Your Business.
+            </p>
+<p class="text-on-surface-variant text-sm">
+                © 2026 CraftedClicks. All rights reserved.
+            </p>
 </div>
 <div class="space-y-4">
-<h4 class="font-bold text-on-surface dark:text-surface-bright">Services</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Web Design</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Development</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Maintenance</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Services</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">UI/UX Design</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">SaaS Architecture</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Website Redesign</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h4 class="font-bold text-on-surface dark:text-surface-bright">Links</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="portfolio.html">Portfolio</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="process.html">Process</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="pricing.html">Pricing</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="about.html">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="portfolio.html">Our Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="process.html">Working Process</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="faq.html">FAQ</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h4 class="font-bold text-on-surface dark:text-surface-bright">Legal</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Connect</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="contact.html">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Dribbble</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Twitter / X</a></li>
 </ul>
 </div>
 </div>
 </footer>
-<script>
-        // Micro-interactions and subtle effects
-        document.querySelectorAll('.premium-card-shadow').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                card.style.setProperty('--mouse-x', `${x}px`);
-                card.style.setProperty('--mouse-y', `${y}px`);
-            });
-        });
 
-        // Simple scroll observer for animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('section > div').forEach(el => {
-            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-            observer.observe(el);
-        });
-    </script>
 </body></html>

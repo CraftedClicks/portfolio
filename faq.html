@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <html class="light" lang="en"><head>
-<meta charset="utf-8"/>
+<meta charset="utf-8"/><meta content="Get answers to frequently asked questions about CraftedClicks' web design process, timelines, pricing, hosting, and site maintenance." name="description"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>FAQ | CraftedClicks - Digital Craftsmanship</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@300;400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script src="js/script.js"></script>
 <style>
@@ -30,25 +30,46 @@
             background-size: 40px 40px;
         }
     </style>
-    <link rel="stylesheet" href="css/style.css">
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
-<div class="flex items-center gap-2">
-<span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
-</div>
+<a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="index.html">Home</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="services.html">Services</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="nav-link-faq text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="faq.html">FAQ</a>
+<a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
 </div>
-<button class="bg-primary-container text-on-primary px-8 py-3 rounded-full font-bold scale-95 active:opacity-80 transition-all hover:shadow-lg">
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
                 Get Started
-            </button>
+            </a>
+<button aria-label="Open Navigation Menu" class="md:hidden text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden fixed top-[72px] left-0 w-full bg-surface border-b border-outline-variant/30 flex flex-col p-6 gap-4 z-40 shadow-lg" id="mobile-menu">
+<a class="mobile-nav-link-home text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="mobile-nav-link-services text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="mobile-nav-link-portfolio text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="mobile-nav-link-pricing text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="mobile-nav-link-process text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+<a class="mobile-nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="mobile-nav-link-faq text-primary font-bold font-label-caps text-label-caps" href="faq.html">FAQ</a>
+<a class="mobile-nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+<a class="bg-primary-container text-on-primary text-center px-8 py-3 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] transition-all" href="contact.html">
+            Get Started
+        </a>
 </div>
 </nav>
 <!-- Hero Section -->
@@ -63,7 +84,7 @@
 <!-- FAQ Search Bar -->
 <div class="w-full max-w-xl mt-8 relative group">
 <span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">search</span>
-<input class="w-full pl-16 pr-6 py-5 rounded-full border border-outline focus:border-primary focus:ring-1 focus:ring-primary bg-surface-container-lowest text-on-surface outline-none transition-all shadow-sm" placeholder="Search for answers..." type="text"/>
+<input aria-label="Search for answers in FAQ knowledge base" class="w-full pl-16 pr-6 py-5 rounded-full border border-outline focus:border-primary focus:ring-1 focus:ring-primary bg-surface-container-lowest text-on-surface outline-none transition-all shadow-sm" id="faq-search" placeholder="Search for answers..." type="text"/>
 </div>
 </div>
 </div>
@@ -80,15 +101,15 @@
 <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6">CATEGORIES</h3>
 <button class="w-full text-left px-6 py-4 rounded-xl bg-primary-container text-on-primary font-bold transition-all flex items-center gap-3">
 <span class="material-symbols-outlined text-[20px]">payments</span>
-                        Pricing & Billing
+                        Pricing &amp; Billing
                     </button>
 <button class="w-full text-left px-6 py-4 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-medium transition-all flex items-center gap-3">
 <span class="material-symbols-outlined text-[20px]">history_edu</span>
-                        Process & Revisions
+                        Process &amp; Revisions
                     </button>
 <button class="w-full text-left px-6 py-4 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-medium transition-all flex items-center gap-3">
 <span class="material-symbols-outlined text-[20px]">settings_suggest</span>
-                        Tech & Maintenance
+                        Tech &amp; Maintenance
                     </button>
 <button class="w-full text-left px-6 py-4 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-medium transition-all flex items-center gap-3">
 <span class="material-symbols-outlined text-[20px]">schedule</span>
@@ -172,9 +193,9 @@
                     </p>
 </div>
 <div class="relative z-10">
-<button class="bg-surface-container-lowest text-primary px-12 py-5 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl">
+<a class="bg-surface-container-lowest text-primary px-12 py-5 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl inline-block text-center" href="contact.html" role="button">
                         Contact Us Today
-                    </button>
+                    </a>
 </div>
 <!-- Decorative Elements -->
 <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl"></div>
@@ -183,73 +204,46 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-surface-container-highest w-full rounded-t-lg">
+<!-- Footer -->
+<footer class="bg-surface-container-highest rounded-t-lg mt-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-padding">
 <div class="space-y-6">
-<span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
+<a class="font-display-lg text-headline-md font-bold text-primary block" href="index.html">CraftedClicks</a>
 <p class="text-on-surface-variant font-body-md">
-                    Excellence in digital craftsmanship. We build premium interfaces for visionary brands.
-                </p>
-<p class="text-on-surface-variant text-sm">© 2024 CraftedClicks. All rights reserved.</p>
+                Modern Websites. Built to Grow Your Business.
+            </p>
+<p class="text-on-surface-variant text-sm">
+                © 2026 CraftedClicks. All rights reserved.
+            </p>
 </div>
 <div class="space-y-4">
-<h5 class="font-label-caps text-label-caps text-on-surface">SERVICES</h5>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">UI/UX Design</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Web Development</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Brand Identity</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="services.html">Performance Optimization</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Services</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Web Development</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">UI/UX Design</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">SaaS Architecture</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="services.html">Website Redesign</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h5 class="font-label-caps text-label-caps text-on-surface">COMPANY</h5>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="portfolio.html">Portfolio</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="process.html">Process</a></li>
-<li><a class="text-primary font-bold" href="faq.html">FAQ</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="about.html">About Us</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="about.html">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="portfolio.html">Our Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="process.html">Working Process</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="faq.html">FAQ</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h5 class="font-label-caps text-label-caps text-on-surface">LEGAL</h5>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Terms of Service</a></li>
-<li><a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-all" href="#">Cookie Policy</a></li>
+<h5 class="font-label-caps text-label-caps text-primary">Connect</h5>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="contact.html">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Dribbble</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Twitter / X</a></li>
 </ul>
 </div>
 </div>
 </footer>
-<script>
-        function toggleFaq(button) {
-            const item = button.parentElement;
-            const isActive = item.classList.contains('active');
-            
-            // Close all items
-            document.querySelectorAll('.faq-accordion-item').forEach(el => {
-                el.classList.remove('active');
-            });
 
-            // If it wasn't active, open it
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        }
-
-        // Search Interactivity (Mock)
-        const searchInput = document.querySelector('input[type="text"]');
-        searchInput.addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase();
-            const items = document.querySelectorAll('.faq-accordion-item');
-            
-            items.forEach(item => {
-                const text = item.innerText.toLowerCase();
-                if (text.includes(term)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    </script>
 </body></html>
