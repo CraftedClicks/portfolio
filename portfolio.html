@@ -89,81 +89,140 @@
 <!-- Filter Controls -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16">
 <div class="flex flex-wrap justify-center gap-4">
-<button class="px-8 py-3 rounded-full bg-primary-container text-on-primary font-semibold shadow-md transition-all active:scale-95">All</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">Landing Page</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">App Design</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">SaaS Product</button>
-<button class="px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95">Dashboard</button>
+<button class="portfolio-filter-btn px-8 py-3 rounded-full bg-primary-container text-on-primary font-semibold shadow-md transition-all active:scale-95" data-filter="all">All</button>
+<button class="portfolio-filter-btn px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95" data-filter="supplement">Supplement Store</button>
+<button class="portfolio-filter-btn px-8 py-3 rounded-full bg-white border border-outline-variant/30 text-secondary font-semibold hover:border-primary hover:text-primary transition-all active:scale-95" data-filter="gym">Gyms & Fitness</button>
 </div>
 </section>
 <!-- Project Grid -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-padding">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
-<!-- Main Featured Project (SaaS Product) -->
-<div class="lg:col-span-8 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden">
-<div class="relative overflow-hidden aspect-video">
-<img alt="A ultra-high-fidelity mockup of a sleek, dark-themed SaaS dashboard interface featuring vibrant data visualizations, neon orange accents, and clean minimalist typography. The scene is presented in a premium 3D isometric view with soft studio lighting and deep shadows, emphasizing a professional and futuristic atmosphere. Pristine white background creates a high-end gallery aesthetic." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK0l4fo0jwHWyomkMyTlT6h555K7stHQ47HEsjJvs4AoXi5Jb5mjEg3m4JglV1qTc4BYxjEbY_fLIdXk-sYgP5g9JJ1ZTAm__Ou42k6F6BJYECf2yNDtJPg6NFVkRprq6os1fpntSPL3KjJLsxmT70Inimj7ggKkLvNwHaknoWc1B2A6qFTCAYUTh-RK8L7GoKB_7lTiUaCK940PP7FlCMZmPCloIYPYWzR7gxvH1K5ug2BQc8Ugm7lw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
-<button class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-bold flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                View Case Study <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="p-10">
-<div class="flex items-center gap-3 mb-4">
-<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider">SaaS Product</span>
-<span class="text-secondary opacity-50 text-[12px] font-bold uppercase tracking-wider">2024</span>
-</div>
-<h3 class="font-headline-lg text-headline-lg mb-4">Nexus Wealth Management</h3>
-<p class="text-secondary text-body-lg max-w-xl">A comprehensive financial tracking system designed for high-net-worth individuals, focusing on clarity and rapid decision-making.</p>
-</div>
-</div>
-<!-- Secondary Project (Landing Page) -->
-<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col">
-<div class="relative overflow-hidden flex-grow">
-<img alt="A luxurious landing page design for a high-end real estate agency. The website showcases large, high-resolution architectural photography of a modern glass villa, elegant serif headings, and expansive whitespace. The color scheme is a sophisticated blend of cream, charcoal, and warm metallic orange. The mood is exclusive, serene, and authoritative." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYX9kzBvoz95heYuVcSWY9ST9uWsSBG0gEu1gP7JLTPyL5MO-nYHMSQu1Bb1B9FYqo8-eiasawosA4_8iWGc_adIB_DqJzzIyiJS70CMi1aOXDj5SmP1sQbrrApoayFf0dK3rMndsH43EqrP63FFIiN6J9ZlUKsQQJUc6yp-iV_gtKZJ8mJldd5-fRf66MqZS7GdIk4v7hXCQqKNDQVCok536JGYu3ZX9chKUrb0ymlQOroRWJYqMenw"/>
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-</div>
-<div class="p-8">
-<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">Landing Page</span>
-<h3 class="font-headline-md text-headline-md mb-2">Aether Estates</h3>
-<p class="text-secondary text-body-md mb-6 opacity-80">Luxury real estate portal with immersive property tours.</p>
-<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="#">
-                            View Case Study 
-                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">north_east</span>
-</a>
-</div>
-</div>
-<!-- Education Platform -->
-<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col">
-<div class="relative overflow-hidden aspect-[4/5]">
-<img alt="A modern education platform interface displayed on a tablet mockup. The design features a colorful, engaging learning path with custom 3D icons, progress charts, and a clean, student-friendly sidebar. Soft pastel colors and high-contrast orange call-to-action buttons create a friendly yet professional educational environment. Studio lighting with soft diffuse shadows." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjoBjTNnIvVs3j5DT9haI4jfc7CmsntDYM78eejVjhtEUEe2nsbVio2J00GGGIZj8BJo8RvWP64gU2Aa8Y4EHNxCymTP6efFh28qS8wRCiQpjWFYeLj__7j5anyjPKSpCilyAmlmTexcJa6kKSzOmE4gas-pgxi11V0jJxUNBIdJcppcKIgrOV4dHOXPEejrz6ubGg6zMHuWy1O4ewC_X4trcniQnKSJCSu_NNIbSxvirmxPJ5IcESjA"/>
-</div>
-<div class="p-8">
-<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">App Design</span>
-<h3 class="font-headline-md text-headline-md mb-2">Lumina Academy</h3>
-<p class="text-secondary text-body-md mb-6 opacity-80">Interactive learning ecosystem for remote creative education.</p>
-<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="#">
-                            View Case Study 
-                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">north_east</span>
-</a>
-</div>
-</div>
-<!-- Ecommerce Project -->
-<div class="lg:col-span-8 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden">
+<!-- Project 1: Supplement Store Demo (E-commerce / Supplement) -->
+<div class="lg:col-span-8 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden" data-category="supplement">
 <div class="grid md:grid-cols-2 h-full">
 <div class="p-10 flex flex-col justify-center order-2 md:order-1">
-<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-6 self-start">E-commerce</span>
-<h3 class="font-headline-lg text-headline-lg mb-4">Vora Boutique</h3>
-<p class="text-secondary text-body-lg mb-8">High-conversion checkout experience for a premium fashion house, resulting in a 40% increase in mobile sales.</p>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold self-start hover:bg-on-primary-fixed-variant transition-colors shadow-md">
-                                Full Case Study
-                            </button>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider">Supplement Store</span>
+<span class="text-secondary opacity-50 text-[12px] font-bold uppercase tracking-wider">Live Demo</span>
 </div>
-<div class="relative overflow-hidden order-1 md:order-2">
-<img alt="A high-end e-commerce website for a luxury fashion brand. The design features minimalist product grids, elegant typography, and high-fashion photography. A clean orange shopping bag icon stands out against a pristine white and light grey background. The atmosphere is chic, expensive, and modern corporate." class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLR4cBnNYrLqTPkAoLUOMMXh6lxIEDPcIDMPq1mTMhxXoSGkj_B2UQV_Gp50c1h-5pmwmQt-ZMtHRALiAotH3wKGl7XByEHWjDs6MFJshvrkMgWG0R2wxbu085ovrMtgrCngBj_taI8WrEWP9HH8pc1De0h9DdUzhkXPfaREyKxsk8IhDtCHdX3e1BjHQSbrDu0vdMJvWlTC9mD_njHtpbh6CumFEGVFBb5oDpNc86NbP3R8rN5VWXJg"/>
+<h3 class="font-headline-lg text-headline-lg mb-4">Supplement Store</h3>
+<p class="text-secondary text-body-lg mb-8">Premium supplement-store style homepage with strong product hero and clear category navigation.</p>
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold self-start hover:bg-on-primary-fixed-variant transition-colors shadow-md inline-flex items-center gap-2" href="https://supplementstore-three.vercel.app" target="_blank">
+                                Visit Live Site <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<div class="relative overflow-hidden order-1 md:order-2 aspect-square md:aspect-auto">
+<img alt="Premium supplement-store style homepage with strong product hero and clear category navigation." class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=800&auto=format&fit=crop"/>
 </div>
 </div>
+</div>
+
+<!-- Project 2: Hulk Fitness Gym (Gym) -->
+<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col" data-category="gym">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img alt="High-contrast gym homepage designed for a performance-driven brand." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">Gym & Fitness</span>
+<h3 class="font-headline-md text-headline-md mb-2">Hulk Fitness Gym</h3>
+<p class="text-secondary text-body-md mb-6 opacity-80">High-contrast gym homepage designed for a performance-driven brand.</p>
+</div>
+<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="https://hulk-fitness-gym.vercel.app" target="_blank">
+                            Visit Live Site 
+                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">open_in_new</span>
+</a>
+</div>
+</div>
+
+<!-- Project 3: MyFitnessFirst (Gym) -->
+<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col" data-category="gym">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img alt="Premium fitness club experience with online class schedules and trainer booking." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">Gym & Fitness</span>
+<h3 class="font-headline-md text-headline-md mb-2">MyFitnessFirst</h3>
+<p class="text-secondary text-body-md mb-6 opacity-80">Premium fitness club experience with online class schedules and trainer booking.</p>
+</div>
+<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="https://myfitnessfirst.in" target="_blank">
+                            Visit Live Site 
+                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">open_in_new</span>
+</a>
+</div>
+</div>
+
+<!-- Project 4: True Fitness Club (Gym) -->
+<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col" data-category="gym">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img alt="Sleek and modern layout optimized for personal trainers and elite athletic conditioning." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">Gym & Fitness</span>
+<h3 class="font-headline-md text-headline-md mb-2">True Fitness Club</h3>
+<p class="text-secondary text-body-md mb-6 opacity-80">Sleek and modern layout optimized for personal trainers and elite conditioning.</p>
+</div>
+<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="https://truefitnessclub.in" target="_blank">
+                            Visit Live Site 
+                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">open_in_new</span>
+</a>
+</div>
+</div>
+
+<!-- Project 5: Hilton Fitness (Gym) -->
+<div class="lg:col-span-4 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden flex flex-col" data-category="gym">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img alt="Premium luxury-class fitness facility showcase with membership management portal." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider mb-4 inline-block">Gym & Fitness</span>
+<h3 class="font-headline-md text-headline-md mb-2">Hilton Fitness</h3>
+<p class="text-secondary text-body-md mb-6 opacity-80">Premium luxury-class fitness facility showcase with membership portal.</p>
+</div>
+<a class="text-primary font-bold inline-flex items-center gap-2 group/link" href="https://hiltonfitness.com" target="_blank">
+                            Visit Live Site 
+                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">open_in_new</span>
+</a>
+</div>
+</div>
+
+<!-- Project 6: My Fitness Club (Gym) -->
+<div class="lg:col-span-8 group project-card bg-white rounded-lg border border-outline-variant/20 overflow-hidden" data-category="gym">
+<div class="grid md:grid-cols-2 h-full">
+<div class="p-10 flex flex-col justify-center order-2 md:order-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-4 py-1 rounded-full bg-surface-container-low text-primary text-[12px] font-bold uppercase tracking-wider">Gym & Fitness</span>
+<span class="text-secondary opacity-50 text-[12px] font-bold uppercase tracking-wider">Live Demo</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">My Fitness Club</h3>
+<p class="text-secondary text-body-lg mb-8">Clean and minimalist club directory designed for community-oriented gyms.</p>
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold self-start hover:bg-on-primary-fixed-variant transition-colors shadow-md inline-flex items-center gap-2" href="https://myfitnesclub.in" target="_blank">
+                                Visit Live Site <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<div class="relative overflow-hidden order-1 md:order-2 aspect-square md:aspect-auto">
+<img alt="Clean and minimalist club directory designed for community-oriented gyms." class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=800&auto=format&fit=crop"/>
+</div>
+</div>
+</div>
+
+<!-- CTA Card inside Grid -->
+<div class="lg:col-span-4 bg-primary text-white rounded-lg p-8 flex flex-col justify-between shadow-xl relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-4 text-white leading-tight">Ready to build your masterpiece?</h3>
+<p class="text-white/80 text-body-md mb-6">Let's discuss how CraftedClicks can bring your business goals to life online.</p>
+</div>
+<a class="bg-white text-primary text-center py-4 rounded-full font-bold hover:bg-surface-container-low transition-colors shadow-lg" href="contact.html">
+        Start Project Now
+</a>
 </div>
 </div>
 </section>

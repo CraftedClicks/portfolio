@@ -194,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Portfolio page filter buttons state changes
   const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       filterButtons.forEach(b => {
@@ -202,6 +203,19 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       btn.classList.add('bg-primary-container', 'text-on-primary');
       btn.classList.remove('bg-white', 'border', 'border-outline-variant/30', 'text-secondary');
+
+      const filterValue = btn.getAttribute('data-filter');
+      projectCards.forEach(card => {
+        if (filterValue === 'all') {
+          card.style.display = 'block';
+        } else {
+          if (card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
     });
   });
 
