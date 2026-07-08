@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 
 <html class="light" lang="en"><head>
-<meta charset="utf-8"/><meta content="Get answers to frequently asked questions about CraftedClicks' web design process, timelines, pricing, hosting, and site maintenance." name="description"/>
+<meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FAQ | CraftedClicks - Digital Craftsmanship</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@300;400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<title>FAQ | CraftedClicks - Common Web Design & Development Questions</title>
+<meta name="description" content="Find answers to common questions about our web design, development process, pricing, hosting, and support services."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script src="js/script.js"></script>
-<style>
-        
-        .faq-accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
-            opacity: 0;
-        }
-        .faq-accordion-item.active .faq-accordion-content {
-            max-height: 500px;
-            opacity: 1;
-            padding-top: 16px;
-        }
-        .faq-accordion-item.active .faq-chevron {
-            transform: rotate(180deg);
-        }
-        .topo-bg {
-            background-image: radial-gradient(circle at 2px 2px, #e5e5e5 1px, transparent 0);
-            background-size: 40px 40px;
-        }
-    </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
 <!-- TopNavBar -->
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
 <a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
 <div class="hidden md:flex items-center gap-4 lg:gap-6">
@@ -48,7 +25,7 @@
       <a class="nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
       <a class="nav-link-faq text-primary border-b-2 border-primary pb-1 font-bold font-label-caps text-label-caps" href="faq.html">FAQ</a>
       <a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
-    </div>
+</div>
 <div class="flex items-center gap-4">
 <a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
                 Get Started
@@ -61,13 +38,13 @@
 <!-- Mobile Navigation Drawer Overlay -->
 <div class="fixed inset-0 z-50 hidden" id="mobile-menu-overlay" role="dialog" aria-modal="true">
   <!-- Backdrop -->
-  <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity" id="mobile-menu-backdrop"></div>
+  <div class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity" id="mobile-menu-backdrop"></div>
   
-  <!-- Drawer Content -->
-  <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-surface p-8 shadow-2xl flex flex-col justify-between z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu-drawer">
+  <!-- Drawer Content (using bg-white for high-contrast background visibility) -->
+  <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white p-8 shadow-2xl flex flex-col justify-between z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu-drawer">
     <div class="space-y-8">
       <!-- Header -->
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
         <span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
         <button class="text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-close-btn" aria-label="Close Menu">
           <span class="material-symbols-outlined text-3xl">close</span>
@@ -89,19 +66,7 @@
     </div>
     
     <!-- Footer in Drawer -->
-    <div class="space-y-6">
-      <a class="bg-primary-container text-white text-center px-8 py-4 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] active:scale-95 transition-all shadow-md" href="contact.html">
-        Get Started
-      </a>
-      <div class="text-xs text-on-surface-variant text-center">
-        © 2026 CraftedClicks
-      </div>
-    </div>
-  </div>
-</div>
-    
-    <!-- Footer in Drawer -->
-    <div class="space-y-6">
+    <div class="space-y-6 pt-6 border-t border-outline-variant/20">
       <a class="bg-primary-container text-white text-center px-8 py-4 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] active:scale-95 transition-all shadow-md" href="contact.html">
         Get Started
       </a>
@@ -286,4 +251,5 @@
 </div>
 </footer>
 
+<script src="js/script.js"></script>
 </body></html>

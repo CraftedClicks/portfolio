@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 
 <html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/><meta content="Explore CraftedClicks' premium services including custom web development, e-commerce stores, UI/UX design, and professional website redesigns." name="description"/>
+<meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Services | CraftedClicks - Excellence in Digital Craftsmanship</title>
+<title>Services | CraftedClicks - Premium Web Development Services</title>
+<meta name="description" content="From single landing pages to complete e-commerce stores, we provide modern design, responsive development, and website maintenance."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-
-<script src="js/script.js"></script>
-<style>
-        body { font-family: 'Inter', sans-serif; }
-        
-        .premium-card-shadow { box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04); }
-        .top-nav-blur { background-color: rgba(250, 249, 254, 0.8); backdrop-filter: blur(12px); }
-        .line-pattern { background-image: radial-gradient(#e2bfb0 0.5px, transparent 0.5px); background-size: 24px 24px; }
-    </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface">
 <!-- TopNavBar -->
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
 <a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">CraftedClicks</a>
 <div class="hidden md:flex items-center gap-4 lg:gap-6">
@@ -34,7 +25,7 @@
       <a class="nav-link-about text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="about.html">About</a>
       <a class="nav-link-faq text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
       <a class="nav-link-contact text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
-    </div>
+</div>
 <div class="flex items-center gap-4">
 <a class="hidden sm:inline-block bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 active:opacity-80 transition-all shadow-sm" href="contact.html">
                 Get Started
@@ -47,13 +38,13 @@
 <!-- Mobile Navigation Drawer Overlay -->
 <div class="fixed inset-0 z-50 hidden" id="mobile-menu-overlay" role="dialog" aria-modal="true">
   <!-- Backdrop -->
-  <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity" id="mobile-menu-backdrop"></div>
+  <div class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity" id="mobile-menu-backdrop"></div>
   
-  <!-- Drawer Content -->
-  <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-surface p-8 shadow-2xl flex flex-col justify-between z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu-drawer">
+  <!-- Drawer Content (using bg-white for high-contrast background visibility) -->
+  <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white p-8 shadow-2xl flex flex-col justify-between z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu-drawer">
     <div class="space-y-8">
       <!-- Header -->
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
         <span class="font-display-lg text-headline-md font-bold text-primary">CraftedClicks</span>
         <button class="text-on-surface hover:text-primary p-2 focus:outline-none" id="mobile-menu-close-btn" aria-label="Close Menu">
           <span class="material-symbols-outlined text-3xl">close</span>
@@ -75,19 +66,7 @@
     </div>
     
     <!-- Footer in Drawer -->
-    <div class="space-y-6">
-      <a class="bg-primary-container text-white text-center px-8 py-4 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] active:scale-95 transition-all shadow-md" href="contact.html">
-        Get Started
-      </a>
-      <div class="text-xs text-on-surface-variant text-center">
-        © 2026 CraftedClicks
-      </div>
-    </div>
-  </div>
-</div>
-    
-    <!-- Footer in Drawer -->
-    <div class="space-y-6">
+    <div class="space-y-6 pt-6 border-t border-outline-variant/20">
       <a class="bg-primary-container text-white text-center px-8 py-4 rounded-full font-label-caps text-label-caps block hover:scale-[1.02] active:scale-95 transition-all shadow-md" href="contact.html">
         Get Started
       </a>
@@ -331,4 +310,5 @@
 </div>
 </footer>
 
+<script src="js/script.js"></script>
 </body></html>
